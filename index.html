@@ -25,6 +25,8 @@
         <link href="css/owl.theme.default.min.css" rel="stylesheet">
 
         <link href="css/tooplate-gotto-job.css" rel="stylesheet">
+        <link href="css/marketpeak.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
         
 <!--
 
@@ -95,79 +97,101 @@ Bootstrap 5 HTML CSS Template
             <section class="hero-section d-flex justify-content-center align-items-center">
                 <div class="section-overlay"></div>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-12 text-center mx-auto">
-                            <h1 class="text-white">Welcome to MarketPeak</h1>
-                            <h2 class="text-white">Discover Amazing Products at Unbeatable Prices</h2>
-                            <a href="#featured-products" class="btn custom-btn mt-3">Shop Now</a>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-lg-7 col-12">
+                            <h1 class="display-4 fw-bold text-white mb-4">Welcome to <span class="text-primary">MarketPeak</span></h1>
+                            <p class="lead text-white mb-4">Discover amazing deals on thousands of products. Shop the latest trends in electronics, fashion, home, and more with fast delivery and easy returns.</p>
+                            <div class="hero-search mb-4">
+                                <form class="d-flex">
+                                    <input type="text" class="form-control form-control-lg me-2" placeholder="Search for products...">
+                                    <button class="btn btn-primary btn-lg" type="submit">
+                                        <i class="bi bi-search"></i> Search
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="#featured-products" class="btn btn-primary btn-lg px-4">
+                                    <i class="bi bi-cart3 me-2"></i>Shop Now
+                                </a>
+                                <a href="#categories" class="btn btn-outline-light btn-lg px-4">
+                                    <i class="bi bi-tags me-2"></i>View Categories
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <div class="hero-image">
+                                <img src="https://source.unsplash.com/random/600x400?shopping" alt="Shopping" class="img-fluid rounded-4 shadow-lg">
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="product-categoryies-section section-padding" id="product-categoryies-section">
+            <section class="categories-section py-5 bg-light" id="categories">
                 <div class="container">
-                    <div class="row justify-content-center align-items-center">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="display-5 fw-bold mb-3">Shop by Category</h2>
+                            <p class="lead text-muted">Explore our wide range of product categories</p>
+                        </div>
+                    </div>
+                    <div class="row g-4">
 
-                        <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-5">Browse by <span>Categories</span></h2>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <a href="products.html?category=electronics" class="text-decoration-none">
+                                <div class="card category-card h-100 border-0 shadow-sm hover-lift">
+                                    <div class="card-body text-center p-4">
+                                        <div class="icon-square bg-primary bg-opacity-10 text-primary rounded-3 p-3 mb-3">
+                                            <i class="bi-phone fs-1"></i>
+                                        </div>
+                                        <h5 class="mb-1">Electronics</h5>
+                                        <small class="text-muted">320+ Products</small>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
 
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="product-categoryies-block">
-                                <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
-                                    <i class="product-categoryies-icon bi-window"></i>
-                                
-                                    <small class="product-categoryies-block-title">Electronics</small>
-
-                                    <div class="product-categoryies-block-number d-flex flex-column justify-content-center align-items-center">
-                                        <span class="product-categoryies-block-number-text">320</span>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <a href="products.html?category=fashion" class="text-decoration-none">
+                                <div class="card category-card h-100 border-0 shadow-sm hover-lift">
+                                    <div class="card-body text-center p-4">
+                                        <div class="icon-square bg-danger bg-opacity-10 text-danger rounded-3 p-3 mb-3">
+                                            <i class="bi-bag fs-1"></i>
+                                        </div>
+                                        <h5 class="mb-1">Fashion</h5>
+                                        <small class="text-muted">180+ Products</small>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
 
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="product-categoryies-block">
-                                <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
-                                    <i class="product-categoryies-icon bi-twitch"></i>
-                                
-                                    <small class="product-categoryies-block-title">Fashion</small>
-
-                                    <div class="product-categoryies-block-number d-flex flex-column justify-content-center align-items-center">
-                                        <span class="product-categoryies-block-number-text">180</span>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <a href="products.html?category=home" class="text-decoration-none">
+                                <div class="card category-card h-100 border-0 shadow-sm hover-lift">
+                                    <div class="card-body text-center p-4">
+                                        <div class="icon-square bg-success bg-opacity-10 text-success rounded-3 p-3 mb-3">
+                                            <i class="bi-house fs-1"></i>
+                                        </div>
+                                        <h5 class="mb-1">Home & Garden</h5>
+                                        <small class="text-muted">340+ Products</small>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
 
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="product-categoryies-block">
-                                <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
-                                    <i class="product-categoryies-icon bi-play-circle-fill"></i>
-                                
-                                    <small class="product-categoryies-block-title">Home & Garden</small>
-
-                                    <div class="product-categoryies-block-number d-flex flex-column justify-content-center align-items-center">
-                                        <span class="product-categoryies-block-number-text">340</span>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <a href="products.html?category=sports" class="text-decoration-none">
+                                <div class="card category-card h-100 border-0 shadow-sm hover-lift">
+                                    <div class="card-body text-center p-4">
+                                        <div class="icon-square bg-warning bg-opacity-10 text-warning rounded-3 p-3 mb-3">
+                                            <i class="bi-bicycle fs-1"></i>
+                                        </div>
+                                        <h5 class="mb-1">Sports & Fitness</h5>
+                                        <small class="text-muted">140+ Products</small>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="product-categoryies-block">
-                                <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
-                                    <i class="product-categoryies-icon bi-globe"></i>
-                                
-                                    <small class="product-categoryies-block-title">Sports & Fitness</small>
-
-                                    <div class="product-categoryies-block-number d-flex flex-column justify-content-center align-items-center">
-                                        <span class="product-categoryies-block-number-text">140</span>
-                                    </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
 
                         <div class="col-lg-2 col-md-4 col-6">
@@ -188,73 +212,165 @@ Bootstrap 5 HTML CSS Template
                 </div>
             </section>
 
-            <section class="job-section job-featured-section section-padding" id="job-section">
+            <section class="featured-products py-5" id="featured-products">
                 <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12 text-center mx-auto mb-4">
-                            <h2>Featured Products</h2>
-                            <p><strong>Handpicked just for you</strong> Explore our curated collection of premium products at amazing prices.</p>
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="display-5 fw-bold">Featured Products</h2>
+                            <p class="lead text-muted">Handpicked just for you</p>
                         </div>
-
-                        <div class="col-lg-12 col-12">
-                            <div class="product-thumb d-flex">
-                                <div class="product-image-wrap bg-white shadow-lg">
-                                    <img src="images/products/smartphone.jpg" class="product-image img-fluid" alt="Smartphone">
+                    </div>
+                    <div class="row g-4">
+                        <!-- Product 1 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card product-card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="https://source.unsplash.com/random/400x300?smartphone" class="card-img-top" alt="Smartphone">
+                                    <div class="product-badges">
+                                        <span class="badge bg-danger">-20%</span>
+                                        <span class="badge bg-success">New</span>
+                                    </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
-                                        <button class="btn btn-sm btn-outline-secondary">View Details</button>
+                                        <button class="btn btn-primary btn-sm w-100 mb-2">
+                                            <i class="bi-cart-plus me-1"></i> Add to Cart
+                                        </button>
+                                        <button class="btn btn-outline-secondary btn-sm w-100">
+                                            <i class="bi-eye me-1"></i> Quick View
+                                        </button>
                                     </div>
                                 </div>
-
-                                <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
-                                    <div class="mb-3">
-                                        <h4 class="job-title mb-lg-0">
-                                            <a href="job-details.html" class="job-title-link">Smartphone</a>
-                                        </h4>
-
-                                        <div class="d-flex flex-wrap align-items-center">
-                                            <p class="job-location mb-0">
-                                                <i class="custom-icon bi-geo-alt me-1"></i>
-                                                $500
-                                            </p>
-
-                                            <p class="job-date mb-0">
-                                                <i class="custom-icon bi-clock me-1"></i>
-                                                10 hours ago
-                                            </p>
-
-                                            <p class="job-price mb-0">
-                                                <i class="custom-icon bi-cash me-1"></i>
-                                                4.5/5
-                                            </p>
-
-                                            <div class="d-flex">
-                                                <p class="mb-0">
-                                                    <a href="products.html" class="badge badge-level">Best Seller</a>
-                                                </p>
-
-                                                <p class="mb-0">
-                                                    <a href="products.html" class="badge">New Arrival</a>
-                                                </p>
-                                            </div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <div class="text-warning">
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-half"></i>
                                         </div>
+                                        <small class="text-muted ms-2">(128)</small>
                                     </div>
-
-                                    <div class="job-section-btn-wrap">
-                                        <a href="job-details.html" class="custom-btn btn">Buy Now</a>
+                                    <h5 class="card-title mb-1">Premium Smartphone X1</h5>
+                                    <p class="text-muted small mb-2">Latest model with 128GB storage</p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="h5 mb-0 text-primary">$599.99</span>
+                                        <small class="text-decoration-line-through text-muted ms-2">$749.99</small>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="product-thumb d-flex">
-                                <div class="product-image-wrap bg-white shadow-lg">
-                                    <img src="images/products/laptop.jpg" class="product-image img-fluid" alt="Laptop">
+                        <!-- Product 2 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card product-card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="https://source.unsplash.com/random/400x300?laptop" class="card-img-top" alt="Laptop">
+                                    <div class="product-badges">
+                                        <span class="badge bg-success">Bestseller</span>
+                                    </div>
                                     <div class="product-actions">
-                                        <button class="btn btn-sm btn-primary">Add to Cart</button>
-                                        <button class="btn btn-sm btn-outline-secondary">View Details</button>
+                                        <button class="btn btn-primary btn-sm w-100 mb-2">
+                                            <i class="bi-cart-plus me-1"></i> Add to Cart
+                                        </button>
+                                        <button class="btn btn-outline-secondary btn-sm w-100">
+                                            <i class="bi-eye me-1"></i> Quick View
+                                        </button>
                                     </div>
                                 </div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <div class="text-warning">
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star"></i>
+                                        </div>
+                                        <small class="text-muted ms-2">(89)</small>
+                                    </div>
+                                    <h5 class="card-title mb-1">Ultra Slim Laptop Pro</h5>
+                                    <p class="text-muted small mb-2">16GB RAM, 512GB SSD</p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="h5 mb-0 text-primary">$1,299.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card product-card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="https://source.unsplash.com/random/400x300?headphones" class="card-img-top" alt="Headphones">
+                                    <div class="product-badges">
+                                        <span class="badge bg-danger">-15%</span>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="btn btn-primary btn-sm w-100 mb-2">
+                                            <i class="bi-cart-plus me-1"></i> Add to Cart
+                                        </button>
+                                        <button class="btn btn-outline-secondary btn-sm w-100">
+                                            <i class="bi-eye me-1"></i> Quick View
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <div class="text-warning">
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                        </div>
+                                        <small class="text-muted ms-2">(245)</small>
+                                    </div>
+                                    <h5 class="card-title mb-1">Wireless Headphones Pro</h5>
+                                    <p class="text-muted small mb-2">Noise cancelling, 30h battery</p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="h5 mb-0 text-primary">$179.99</span>
+                                        <small class="text-decoration-line-through text-muted ms-2">$199.99</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card product-card h-100 border-0 shadow-sm">
+                                <div class="position-relative">
+                                    <img src="https://source.unsplash.com/random/400x300?smartwatch" class="card-img-top" alt="Smartwatch">
+                                    <div class="product-badges">
+                                        <span class="badge bg-info">New</span>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="btn btn-primary btn-sm w-100 mb-2">
+                                            <i class="bi-cart-plus me-1"></i> Add to Cart
+                                        </button>
+                                        <button class="btn btn-outline-secondary btn-sm w-100">
+                                            <i class="bi-eye me-1"></i> Quick View
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="d-flex justify-content-center mb-2">
+                                        <div class="text-warning">
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-fill"></i>
+                                            <i class="bi-star-half"></i>
+                                            <i class="bi-star"></i>
+                                        </div>
+                                        <small class="text-muted ms-2">(67)</small>
+                                    </div>
+                                    <h5 class="card-title mb-1">Fitness Smartwatch 3</h5>
+                                    <p class="text-muted small mb-2">Heart rate & sleep tracking</p>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="h5 mb-0 text-primary">$199.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                                 <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
                                     <div class="mb-3">
